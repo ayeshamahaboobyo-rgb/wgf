@@ -132,11 +132,11 @@ const AnimatedImageCard = ({ title = 'Images', description = 'Search your images
         )}
 
         {stage === 'expanded' && selectedImage !== null && (
-          <div className="w-full h-full flex flex-col items-center justify-center gap-4 animate-expand overflow-auto">
+          <div className="w-full h-full flex flex-col items-center justify-center gap-3 animate-expand overflow-hidden px-4">
             <img
               src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Screenshot%202026-02-10%20234755-1X0I4sbNHjndxVD0EHbA2StS4wHhKL.png"
               alt="JavaScript error screenshot"
-              className="max-w-2xl max-h-full w-auto h-auto object-contain"
+              className="w-full max-h-[calc(100%-100px)] object-contain"
             />
             <div className="flex flex-col items-center gap-3">
               <div className="px-3 py-2 bg-accent/20 border border-accent/60 rounded-lg backdrop-blur-sm">
